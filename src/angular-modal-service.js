@@ -92,10 +92,10 @@
 
                   //  We can now clean up the scope and remove the element from the DOM.
                   modalScope.$destroy();
-                  modalElement.remove();
-                  
+                  modalElement.model('hide');
+
                   //  Unless we null out all of these objects we seem to suffer
-                  //  from memory leaks, if anyone can explain why then I'd 
+                  //  from memory leaks, if anyone can explain why then I'd
                   //  be very interested to know.
                   inputs.close = null;
                   deferred = null;
